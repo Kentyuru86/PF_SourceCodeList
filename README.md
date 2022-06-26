@@ -47,6 +47,14 @@
 ## CustomPlayerMoveInspector.cs
 ### 解説 <!-- omit in toc -->
 PlayerMove.csのパラメータをUnityエディタのInspector内で編集しやすくするための機能をまとめたプログラムです。
+このプログラムで実装している機能は以下の通りです。
+
+|機能|内容|
+|:--:|:--:|
+|パワー設定|<img src="Docs/Images/PlayerMoveCtrl_Power.jpg" width="300">|
+|ギア比設定|<img src="Docs/Images/PlayerMoveCtrl_Gear.jpg" width="300">|
+|グリップ設定|<img src="Docs/Images/PlayerMoveCtrl_Grip.jpg" width="300">|
+
 ### 工夫した点 <!-- omit in toc -->
 - トルクカーブのグラフやギア比から速度がどの程度出るのかを表示するようにしており、数値をどの程度変えると良いのかがわかりやすくなるように配慮しました。
 
@@ -65,21 +73,25 @@ PlayerMove.csのパラメータをUnityエディタのInspector内で編集し�
 
 # データ管理
 ## CharaData.cs
-![](Docs/Images/CharaData_inspector.jpg)
+<img src="Docs/Images/CharaData_inspector.jpg" width="300">
+
 ### 解説 <!-- omit in toc -->
 キャラクターの3Dモデルや挙動データなどをキャラクターごとにまとめたデータ管理用のプログラムです。
 
 ## StageData.cs
-![](Docs/Images/StageData_inspector.jpg)
+<img src="Docs/Images/StageData_inspector.jpg" width="300">
+
 ### 解説 <!-- omit in toc -->
 ステージの3Dモデルや再生するBGM、キャラクターの初期位置やギミックの配置等をまとめたデータ管理用のプログラムです。
+
 ### 工夫した点 <!-- omit in toc -->
 - データ管理のプログラムでは、キャラクター挙動プログラムのように実行の速さよりも、拡張や修正のしやすさを優先して実装しました。
 
 
 # エディタ拡張
 ## DebugRaceData.cs
-![](Docs/Images/Debug_rule.jpg)
+<img src="Docs/Images/Debug_rule.jpg" width="300">
+
 ### 解説 <!-- omit in toc -->
 制作時のデバッグ機能をまとめたプログラムです。パラメータ設定の自動化や、作業のショートカット設定をまとめることで作業時間の短縮を実現しています。
 
@@ -87,12 +99,13 @@ PlayerMove.csのパラメータをUnityエディタのInspector内で編集し�
 
 |機能|内容|
 |:--:|:--:|
-|ルール設定|![](Docs/Images/Debug_rule.jpg)|
-|キャラクター設定|![](Docs/Images/Debug_charactor.jpg)|
-|ステージ設定|![](Docs/Images/Debug_stage.jpg)|
-|コントローラ設定|![](Docs/Images/Debug_controller.jpg)|
-|シーン設定|![](Docs/Images/Debug_scene.jpg)|
-|レース中デバッグ設定|![](Docs/Images/Debug_race.jpg)|
-|ショートカット|![](Docs/Images/Debug_shortcutlist.jpg)|
+|ルール設定|<img src="Docs/Images/Debug_rule.jpg" width="300">|
+|キャラクター設定|<img src="Docs/Images/Debug_charactor.jpg" width="300">|
+|ステージ設定|<img src="Docs/Images/Debug_stage.jpg" width="300">|
+|コントローラ設定|<img src="Docs/Images/Debug_controller.jpg" width="300">|
+|シーン設定|<img src="Docs/Images/Debug_scene.jpg" width="300">|
+|レース中デバッグ設定|<img src="Docs/Images/Debug_race.jpg" width="300">|
+|ショートカット|<img src="Docs/Images/Debug_shortcutlist.jpg" width="300">|
+
 ### 工夫した点 <!-- omit in toc -->
 - ショートカットリストやプリセット機能を実装することで、作業時間の短縮とヒューマンエラーの削減を実現しました。
